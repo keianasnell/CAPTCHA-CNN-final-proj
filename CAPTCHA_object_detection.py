@@ -10,8 +10,8 @@ from distutils.version import StrictVersion
 from collections import defaultdict
 
 
-# title of our window
-title = "CAPTCHA"
+# # title of our window
+# title = "CAPTCHA"
 
 # Env setup
 from object_detection.utils import ops as utils_ops
@@ -70,10 +70,8 @@ def Captcha_detection(image, average_distance_error=3):
               category_index,
               use_normalized_coordinates=True,
               line_thickness=2)
-            # Show image with detection
-            #cv2.imshow(title, cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB))
             # Save image with detection
-            cv2.imwrite("Predicted_captcha.jpg", cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB))
+           # cv2.imwrite("Predicted_captcha.jpg", cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB))
 
 
             # Bellow we do filtering stuff
